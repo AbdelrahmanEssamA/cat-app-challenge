@@ -11,7 +11,12 @@ module.exports = {
       },
     },
   },
-  extends: ['plugin:react/recommended', 'airbnb'],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:jsx-a11y/recommended',
+    'plugin:react-hooks/recommended',
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -39,5 +44,6 @@ module.exports = {
     'react/jsx-no-bind': 'off',
     'no-nested-ternary': 'off',
     'react/destructuring-assignment': 'off',
+    'linebreak-style': 0,
   },
 };
