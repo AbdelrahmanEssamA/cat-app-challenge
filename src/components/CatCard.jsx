@@ -60,7 +60,6 @@ const CatCard = () => {
               className="button bg-iblue text-white"
               onClick={() => {
                 setopen(true);
-                console.log(open);
               }}
               type="button"
             >

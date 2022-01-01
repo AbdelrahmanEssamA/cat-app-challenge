@@ -49,7 +49,6 @@ const EditCat = ({ closeModal, cat }) => {
       id: cat.id,
       birthDate: data.birthDate.toISOString().split('T')[0],
     };
-    console.log(parsedData);
     dispatch(setCat(parsedData));
     dispatch(updateCat(parsedData));
     closeModal();
