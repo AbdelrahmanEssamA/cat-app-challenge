@@ -1,6 +1,63 @@
 body {
   margin: 0;
+  @apply bg-background;
 }
+.pageCard {
+  @apply bg-white w-full shadow-custom rounded-2xl flex-col items-center justify-center h-full px-4 py-6 mt-2 md:py-14 md:px-10;
+}
+.itemImage {
+  width: 56px;
+  height: 56px;
+  @apply rounded-full border-gray-100 border-4 shadow-lg;
+}
+
+.searchBar {
+  outline: none;
+  @apply rounded-lg bg-grey2;
+}
+.listItem {
+  transition: all 0.23s;
+}
+.listItem:hover {
+  transform: scale(0.97);
+}
+.notification {
+  @apply bg-ired rounded-full  text-white font-inter text-xs  ml-4 -mb-3 z-10 shadow;
+  width: 1rem;
+  padding-left: 0.08rem;
+  height: 1.05rem;
+  text-align: center;
+}
+.infoItem {
+  @apply font-inter text-base font-medium text-subheading pl-2;
+}
+.modal {
+  @apply bg-white;
+  @media screen and (min-width: 1024px) {
+    left: 50%;
+    bottom: 50%;
+  }
+}
+
+.headingMini {
+  @apply font-sora text-3xl font-bold uppercase mb-3;
+}
+.button {
+  @apply font-inter font-normal shadow-lg px-5 py-2 rounded-lg transition-all;
+}
+
+.button:hover {
+  transform: scale(0.97);
+  @apply shadow-none;
+}
+
+.inputFiled {
+  @apply bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-iblue mt-5;
+}
+.errorMsg {
+  @apply items-start text-xs text-ired p-0  m-1;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
